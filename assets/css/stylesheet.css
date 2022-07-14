@@ -1,0 +1,581 @@
+@font-face {
+    font-family: coolfont;
+    src: url(./assets/fonts/mesquite.otf);
+    src: url("./assets/fonts/mesquite.otf");
+    src: local("./assets/fonts/mesquite.otf");
+    src: local-link("./assets/fonts/mesquite.otf");
+    src: local(mesquite);
+    src: local(mesquite-regular);
+    src: local(mesquitestd);
+}
+/*  CLASES HELPERS */
+    .ancho70 {
+        max-width: 70%;
+    }
+    .ancho30 {
+        max-width: 30%;
+    }
+    .flexwrap {
+        flex-wrap: wrap;
+    }
+/*  FIN DE LAS CLASES HELPERS */
+body {
+    font-family: georgia;
+    font-size: 100%;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+.logo {
+    width:104px;
+    height:104px;
+    position: fixed;
+    padding: 1% 0% 0% 0%;
+}
+.padd1 {
+    padding-left: 1%;
+}
+.header {
+    font-size: 2.1em;
+    vertical-align: auto;
+}
+.inline {
+    display: inline;
+}
+.center {
+    vertical-align: center;
+}
+.flex_main li {
+    font-size: 20px;
+    margin: 0% 1% 0% 1% ;
+}
+/*  SECCIÓN PARA EL ESTILO DE LOS ENLACES Y FONDOS DEL NAV BAR */
+    .no_deco {
+        text-decoration: none;
+        padding: 6px;
+        border-radius: 18%;
+        border: 2px;
+        border-style: dotted;
+        border-color: black;
+    }
+    a:link.no_deco{
+        background-color: burlywood;
+        color: black;
+    }
+    a:visited.no_deco {
+        background-color: burlywood;
+        color: black;
+    }
+    a:hover.no_deco {
+        background-color: orange;
+        color: black;
+    }
+    a:active.no_deco {
+        background-color: burlywood;
+        color: black;
+    }
+/*  FINALIZA EL ESTILO DEL NAV BAR */
+/*  FONDO PARA DELIMITAR EL [NAV TOP MENU] ES nav_bg */
+    .nav_bg {
+        width: 98.5%;
+        justify-content: center;
+    }
+/*  STICKY PARA POSICIONAR SIEMPRE AL TOP EL NOMBRE E IMAGEN DE EL TOP NAV MENU */
+    .sticky {
+        position: fixed;
+        background: url(/assets/img/fondos/nav_bg.png) repeat;
+        background-size: 100%;
+        background-color: blanchedalmond;
+    }
+/*GRIDS*/
+    .ma1{grid-area:ma1;}
+    .na1{grid-area: na1;}
+    .grid__desc__left{grid-area: gdl;}
+    .grid__img_right{grid-area: gir;}
+    .grid__desc__right{grid-area: gdr;}
+    .grid__img_left{grid-area: gil;}
+    .grid__cntr-side1{grid-area: yt1;}
+    .grid__cntr-side2{grid-area: yt2;}
+    .mapa__izq{grid-area: mi1;}
+    .mapa__der{grid-area:  md1;}
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto  auto auto auto auto ;
+        grid-template-areas: 'ma1 ma1 ma1 na1 na1';
+    }
+    .grid-container__main{
+        display: grid;
+        grid-template-columns: auto  auto auto auto auto ;
+        grid-template-areas: "gdl gdl gir gir gir";
+    }
+    .grid-container__main2{
+        display: grid;
+        grid-template-columns: auto auto auto auto auto ;
+        grid-template-areas: " gil gil gil gdr gdr";
+    }
+    .grid__ctnr-btmm{
+        display: grid;
+        gap: 3%;
+        grid-template-columns: 16% 16% 16% 16%;
+        grid-template-areas: 'yt1 yt1  yt2 yt2';
+    }
+    .grid__ctnr-map{
+        display: grid;
+        gap: 3%;
+        grid-template-columns: auto auto auto auto auto auto  ;
+        grid-template-areas: "mi1 mi1 md1 md1 md1 md1";
+    }
+/*FIN DE GRIDS*/
+main {
+    padding-top: 10%;
+}
+body {
+    margin-top: 0px;
+    width: auto;
+}
+.main__section {
+    border: 2px;
+    border-style: dotted; 
+    border-color: black;
+    background: url(/assets/img/fondos/manchas.png) repeat;
+    background-color: burlywood;
+    border-radius: 3%;    
+    margin: 6px;
+}
+aside article {
+    margin: 10px;
+    vertical-align: middle;
+    padding-left: 1%;
+}
+.flex_main {
+    display: flex;
+}
+.nav__flexwrap {
+    flex-wrap: wrap;
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 20px;
+    align-content: space-around;
+}
+.ancho20 {
+    min-width: 40%;
+}
+main section {
+    display: flex;
+    flex-wrap: wrap;
+}
+.main__description {
+    display: inline;
+    font-size: larger;
+    text-align: justify;
+    margin: 0% 1% 0% 1%;
+}
+aside img {
+    border-radius: 6%;
+}
+.main__section__img {
+    padding: 6px;
+    width: 540px;
+}
+.main__description P:hover {
+    font-weight: bolder;
+    text-align: center;
+}
+/*  SECCIÓN DE NOTICIAS LATERAL DERECHA */
+    .news {
+        border: 2px;
+        border-style: dotted; 
+        border-color: black;
+        border-radius: 3%;
+        margin: 1%;
+        background: url(/assets/img/fondos/manchas.png) repeat;
+        background-color: burlywood;
+    }
+    .news__img {
+        width:100%;
+    }
+    .news__title {
+        font-family: coolfont;
+        border-top:0px;
+        border-right:0px;
+        border-bottom:2px;
+        border-left:0px;
+        border-style: dotted;
+        border-color: black;
+        text-align: center;
+        font-size: 222%;
+        margin: 1%;
+    }
+    .news__title__art {
+        border-top:0px;
+        border-right:0px;
+        border-bottom:2px;
+        border-left:0px;
+        border-style: dotted;
+        border-color: black;
+        text-align: justify;
+        margin: 0px 0px 6% 0px;
+        padding: 3%;
+    }
+    :hover.news__title__art {
+        border-top:0px;
+        border-right:0px;
+        border-bottom:2px;
+        border-left:0px;
+        border-style: dotted;
+        border-color: black;
+        text-align: justify;
+        text-transform: uppercase;
+        margin: 0px 0px 6% 0px;
+        transition-duration: 1s;
+        transition-delay: 0.2s;
+        transition-timing-function: linear;
+    }
+    :hover.news__img {
+        width: 80%;
+        padding: 6.6%;
+        border-radius: 36%;
+        transition-duration: 1s;
+        transition-delay: 0.2s;
+        transition-timing-function: linear;
+    }
+/*  FIN DE SECCIÓN DE NOTICIAS */
+/*  INICIO DE GALERÍA */
+    .galeria {
+        width: auto;
+        margin: 1%;
+        background: url(/assets/img/fondos/manchas.png) repeat;
+        background-color: burlywood;
+        border-radius: 6%;
+    }
+    .galeria__border {
+        border: 2px;
+        border-style: dotted;
+        border-color: black;
+        border-radius: 6%;
+    }
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-around;
+    }
+    .gallery__img {
+        border-radius: 6%;
+        width: 20%;
+        min-width: 20%;
+        max-width: 90%;
+        margin: 1%;
+    }
+    :hover.gallery__img {
+        width: 16%;
+        min-width: 16%;
+        height: 16%;
+        padding: 1.5%;
+        max-width: 90%;
+        border: 1.5%;
+        border-style: dotted;
+        border-color: brown;transition: 1s;
+    }
+/*  FIN DE LA GALERÍA */
+/*  INICIO DE LA SECCIÓN DE YOUTUBE INFORMATIVA */
+    .youtube {
+        width: auto;
+        /* display: flex; */
+        justify-content: space-around;
+        margin: 1%;
+        border: 2px;
+        border-style: dotted;
+        border-color: black;
+        border-radius: 4%;
+        background: url(/assets/img/fondos/manchas.png) repeat;
+        background-color: burlywood;
+        padding: 2%;
+    }
+    .yt__player {
+        align-items: center;
+        width:90% ;
+        height:98%;
+        border-radius: 18%;
+        border: 5px;
+        border-style:ridge;
+        border-color: peru;
+    }
+    .youtube__title {
+        text-align: center;
+    }
+    .youtube__side{
+        margin: 3% 0 5% 0;
+        padding: 3% 0 5% 0;
+    }
+/*  FIN DE LA SECCIÓN YOUTUBE */
+/*  INICIO SECCIÓN MAPA */
+    .mapa {
+        width: auto;
+        text-align: center;
+        margin: 1%;
+        background: url(/assets/img/fondos/manchas.png) repeat;
+        background-color: burlywood;
+        border-radius: 6%;
+        border: 2px;
+        border-color: black;
+        border-style: dotted;
+        /* display: flex; */
+    }
+    .mapa__izq {
+        /* width: 40%; */
+        text-align: justify;
+        padding: 0% 1% 0% 1%;
+        margin: 0% 1% 0% 1%;
+    }
+    .mapa__txt_title {
+        font-family: coolfont;
+        width: auto;
+        font-size: 210%;
+        text-align: center;
+    }
+    .mapa__txt_txt {
+        text-align: justify;
+        margin: 6%;
+        line-height: 24px;
+    }
+    .mapa__der {
+        text-align: center;
+        /* width: 60%; */
+        height: auto;
+        padding: 1%;
+        margin: 3% 1% 3% 1%;
+        border: 2px;
+        border-style: dotted;
+        border-color: black;
+        border-radius: 18%;
+        line-height: 30px;
+    }
+    .mapa_api {
+        width: auto;
+    }
+/*  FIN DE LA SECCIÓN MAPA */
+/*  FOOTER */
+    .footer {
+        width: 99.5%;
+        margin-top: 2%;
+        padding-top: 1%;
+        border-top:2px;
+        border-right:0px;
+        border-bottom:0px;
+        border-left:0px;
+        border-style: dotted;
+        border-color: black;    
+        font-size: smaller;
+        background-image: url(/assets/img/fondos/manchas.png);
+        background-color: burlywood;
+    }
+    .footer__list {
+        display: flex;
+        justify-content: space-around;
+    }
+    .footer__list__ul {
+        flex-wrap: wrap;
+    }
+    .footer__list__p {
+        display: flex;
+        justify-content: space-around;
+    }
+    .footer__list__ul__a {
+        text-decoration: none;
+        font-size: smaller;
+        padding: 10px;
+        border-radius: 36%;
+    }
+    a:link.footer__list__ul__a{
+        color: black;
+    }
+    a:visited.footer__list__ul__a {
+        background-color: blanchedalmond;
+        color: black;
+    }
+    a:hover.footer__list__ul__a {
+        background-color: blanchedalmond;
+        color: black;
+    }
+    a:active.footer__list__ul__a {
+        color: black;
+    }
+/*  FIN DEL FOOTER */
+/* SECCIÖN DE EVENTOS */
+.ttl__img{
+    border-radius: 6%;
+}
+.dcr__img{
+    border-radius: 6%;
+}
+.dcr__img2{
+    border-radius: 6%;
+}
+.dcr__img3{
+    border-radius: 6%;
+}
+.ttl__img{width: 100%;}
+.dcr__img{width: 100%;}
+.dcr__img2{width: 100%;}
+.dcr__img3{width: 100%;}
+.title_sect{grid-area: ttl_sct;}
+.descr_sect{grid-area: des_sct;}
+.ttl__txt{grid-area: ttl_txt;}
+.ttl__img{grid-area: ttl_img;}
+.dcr__txt{grid-area: dcr__txt;}
+.dcr__img{grid-area: dcr__img;}
+.dcr__img2{grid-area: dcr__img2;}
+.dcr__txt2{grid-area: dcr__txt2;}
+.dcr__txt3{grid-area: dcr__txt3;}
+.dcr__img3{grid-area: dcr__img3;}
+.mn_ev{
+    display: grid;
+    grid-template-columns:  11% 11% 11% 11% 11% 11% 11% 11% 8% 4%;
+    grid-template-areas: 
+    "ttl_sct ttl_sct ttl_sct ttl_sct ttl_sct ttl_sct ttl_sct na1 na1 na1" 
+    "des_sct des_sct des_sct des_sct des_sct des_sct des_sct na1 na1 na1" 
+    "des_sct des_sct des_sct des_sct des_sct des_sct des_sct na1 na1 na1" 
+    "des_sct des_sct des_sct des_sct des_sct des_sct des_sct na1 na1 na1";
+}
+.grid__title_sect{
+    padding: 3%;
+    gap: 12px;
+    display: grid;
+    grid-template-columns:  45% 45%;
+    grid-template-areas: "ttl_txt ttl_img";
+}
+.grid01{
+    padding: 3%;
+    gap: 12px;
+    display: grid;
+    grid-template-columns:  45% 45%;
+    grid-template-areas:"dcr__txt dcr__img"
+    ;
+}
+.grid02{ 
+    padding: 3%;
+    gap: 12px;
+    display: grid;
+    grid-template-columns:  45% 45%;
+    grid-template-areas: "dcr__img2 dcr__txt2";
+}
+.grid03{
+    padding: 3%;
+    gap: 12px;
+    display: grid;
+    grid-template-columns:  45% 45%;
+    grid-template-areas:"dcr__txt3 dcr__img3"
+}
+/* FIN DE SECCIÓN DE EVENTOS */
+    @media only screen and (max-width: 600px) {   
+        .main__section__img {
+            padding: 6px;
+            max-width: 98%;
+            width: auto;
+            min-width: 200px;
+        }
+        .main__description{
+            /* width: 90%; */
+            max-width: 100%;
+        }
+        .news__title{
+            font-size: 210%;
+        }
+        .yt__player {
+            width:98% ;
+            height:98%;
+            border-radius: 18%;
+            border: 5px;
+            border-style:ridge;
+            border-color: peru;
+        }
+        .youtube__side{
+            margin: 3% 0 5% 0;
+            padding: 3% 0 5% 0;
+        }
+    .grid-container {
+        display: grid;
+        grid-column:auto;
+        grid-template-columns: auto ;
+        grid-template-areas: 
+        'ma1'
+        'na1';
+    }
+    .grid-container__main{
+        display: grid;
+        grid-column:auto;
+        grid-template-columns: auto ;
+        grid-template-areas: 
+        "gdl"
+        "gir";
+    }
+    .grid-container__main2{
+        display: grid;
+        grid-column:auto;
+        grid-template-columns: auto ;
+        grid-template-areas: 
+        "gil"
+        "gdr";
+    }
+    .grid__ctnr-btmm{
+        display: grid;
+        grid-column:auto;
+        grid-template-columns: auto ;
+        grid-auto-rows: auto;
+        grid-template-areas: 
+        'yt1 '
+        'yt2';
+        padding-bottom: 9%;
+    }
+    .grid__ctnr-map{
+        display: grid;
+        grid-column:auto;
+        grid-template-columns: auto ;
+        grid-template-areas: 
+        "mi1 "
+        "md1";
+    }
+    /* EVENTOS */
+
+    .mn_ev{
+        display: grid;
+        grid-template-columns:  98%;
+        grid-template-areas: 
+        "ttl_sct" 
+        "des_sct"
+        "na1";
+    }
+    .grid__title_sect{
+        padding: 3%;
+        gap: 12px;
+        display: grid;
+        grid-template-columns:  98%;
+        grid-template-areas: "ttl_txt"
+        "ttl_img";
+    }
+    .grid01{
+        padding: 3%;
+        gap: 12px;
+        display: grid;
+        grid-template-columns:  98%;
+        grid-template-areas:"dcr__txt"
+        "dcr__img"
+        ;
+    }
+    .grid02{ 
+        padding: 3%;
+        gap: 12px;
+        display: grid;
+        grid-template-columns:  98%;
+        grid-template-areas: "dcr__img2"
+        "dcr__txt2";
+    }
+    .grid03{
+        padding: 3%;
+        gap: 12px;
+        display: grid;
+        grid-template-columns:  98%;
+        grid-template-areas:
+        "dcr__txt3"
+        "dcr__img3"
+    }
+}
