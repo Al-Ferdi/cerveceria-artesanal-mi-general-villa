@@ -136,7 +136,7 @@ body {
     border: 2px;
     border-style: dotted; 
     border-color: black;
-    background: url(/assets/img/fondos/manchas.png) repeat;
+    background: url(./assets/img/fondos/manchas.png) repeat;
     background-color: burlywood;
     border-radius: 3%;    
     margin: 6px;
